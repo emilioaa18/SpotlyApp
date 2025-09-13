@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:src="@drawable/spotly_pin_s"
+        android:contentDescription="Icono Spotly"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="64dp"/>
+
+    <TextView
+        android:id="@+id/txttittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spotly"
+        android:fontFamily="sans-serif-black"
+        android:textSize="55sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="250dp"
+        android:textColor="@color/colorText"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explora lo que pasa cerca de ti"
+        android:textSize="18sp"
+        android:textColor="@color/colorSecondary"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="normal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txttittle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btnComenzar"
+        android:layout_width="245dp"
+        android:layout_height="60dp"
+        android:text="Comenzar"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-medium"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:cornerRadius="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
